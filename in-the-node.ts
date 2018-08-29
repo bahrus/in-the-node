@@ -19,6 +19,7 @@ function init(){
 if(!(<any>self)['RunKit_Script']){
     const scriptTag = document.createElement('script') as HTMLScriptElement;
     scriptTag.src = 'https://embed.runkit.com';
+    scriptTag.id = 'RunKit_Script';
     scriptTag.onload = () =>{
         init();
     }
