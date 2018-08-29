@@ -1,0 +1,25 @@
+{
+  "name": "in-the-node",
+  "version": "0.0.0",
+  "description": "tbd",
+  "main": "in-the-node.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "xtal-latx": "0.0.19"
+  },
+  "devDependencies": {
+    "jiife": "^0.0.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bahrus/in-the-node.git"
+  },
+  "author": "bahrus <anderson.bruce.b@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bahrus/in-the-node/issues"
+  },
+  "homepage": "https://github.com/bahrus/in-the-node#readme"
+}
