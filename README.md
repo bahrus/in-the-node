@@ -2,7 +2,7 @@
 
 <a href="https://nodei.co/npm/in-the-node/"><img src="https://nodei.co/npm/in-the-node.png"></a>
 
-<img src="http://img.badgesize.io/https://unpkg.com/in-the-node@0.0.2/build/ES6/in-the-node.iife.js?compression=gzip">
+<img src="http://img.badgesize.io/https://unpkg.com/in-the-node@0.0.3/build/ES6/in-the-node.iife.js?compression=gzip">
 
 # in-the-node
 
