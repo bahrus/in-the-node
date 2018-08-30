@@ -8,6 +8,8 @@
 
 Embed node inside your browser with [RunKit](https://runkit.com/docs/embed).
 
+[Full-screen Demo](https://rawgit.com/bahrus/in-the-node/master/demo/index.html)
+
 <!--
 ```
 <custom-element-demo>
