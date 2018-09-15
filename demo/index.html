@@ -10,7 +10,13 @@
     <!-- Polyfill for re(dge)tro browsers -->
     <script src="https://unpkg.com/@webcomponents/webcomponentsjs/webcomponents-loader.js"></script>
     <!-- Polyfill for re(dge)tro browsers -->
-    <script type="module" src="../in-the-node.iife.js"></script>
-    <in-the-node></in-the-node>
+    <script type="module" src="https://unpkg.com/in-the-node@0.0.5/in-the-node.iife.js"></script>
+    <in-the-node>
+        <script nomodule>
+            // GeoJSON!
+            var getJSON = require("async-get-json");
+            await getJSON("https://storage.googleapis.com/maps-devrel/google.json");
+        </script>
+    </in-the-node>
 </body>
 </html>

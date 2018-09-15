@@ -7,10 +7,16 @@
     <title>Document</title>
 </head>
 <body>
-        <!-- Polyfill for re(dge)tro browsers -->
-        <script src="https://unpkg.com/@webcomponents/webcomponentsjs/webcomponents-loader.js"></script>
-        <!-- Polyfill for re(dge)tro browsers -->
+    <!-- Polyfill for re(dge)tro browsers -->
+    <script src="https://unpkg.com/@webcomponents/webcomponentsjs/webcomponents-loader.js"></script>
+    <!-- Polyfill for re(dge)tro browsers -->
     <script type="module" src="../in-the-node.js"></script>
-    <in-the-node></in-the-node>
+    <in-the-node>
+        <script nomodule>
+            // GeoJSON!
+            var getJSON = require("async-get-json");
+            await getJSON("https://storage.googleapis.com/maps-devrel/google.json");
+        </script>
+    </in-the-node>
 </body>
 </html>

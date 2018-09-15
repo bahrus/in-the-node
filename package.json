@@ -7,10 +7,10 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
-    "xtal-latx": "0.0.19"
+    "xtal-latx": "0.0.27"
   },
   "devDependencies": {
-    "jiife": "^0.0.4"
+    "jiife": "^0.0.5"
   },
   "repository": {
     "type": "git",
