@@ -1,7 +1,6 @@
 {
   "sources":[
-    "in-the-node.js",
-    "in-the-node.iife.js"
+    "dist/in-the-node.iife.js"
   ],
   "npm": true,
   "lint": {
@@ -15,12 +14,6 @@
       "js": {"minify": false, "compile": true},
       "html": {"minify": true},
       "css" : {"minify": true}
-    },
-    {
-      "name": "ES6",
-      "js": {"minify": true, "compile": false},
-      "html": {"minify": true},
-      "css" : {"minify": true}
-    }    
+    } 
   ]
 }
