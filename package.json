@@ -4,13 +4,16 @@
   "description": "tbd",
   "main": "in-the-node.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "node node_modules/xtal-test/serve.js"
   },
   "dependencies": {
-    "xtal-latx": "0.0.86"
+    "xtal-element": "0.0.70",
+    "trans-render": "0.0.125"
   },
   "devDependencies": {
-    "jiife": "0.0.10"
+    "jiife": "0.0.12",
+    "xtal-test": "0.0.19"
   },
   "repository": {
     "type": "git",

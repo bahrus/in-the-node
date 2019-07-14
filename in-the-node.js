@@ -1,5 +1,6 @@
-import { define } from 'xtal-latx/define.js';
-import { XtallatX } from 'xtal-latx/xtal-latx.js';
+import { define } from 'trans-render/define.js';
+import { hydrate } from 'trans-render/hydrate.js';
+import { XtallatX } from 'xtal-element/xtal-latx.js';
 /**
  * `in-the-node`
  *  Embed node inside your browser with RunKit.
@@ -7,7 +8,7 @@ import { XtallatX } from 'xtal-latx/xtal-latx.js';
  * @customElement
  * @demo demo/index.html
  */
-export class InTheNode extends XtallatX(HTMLElement) {
+export class InTheNode extends XtallatX(hydrate(HTMLElement)) {
     constructor() {
         super(...arguments);
         this._input = null;
@@ -24,8 +25,17 @@ export class InTheNode extends XtallatX(HTMLElement) {
         this.onPropsChange();
     }
     connectedCallback() {
-        this._upgradeProperties(['input']);
+        this.propUp(['input']);
         this.getScript();
+    }
+    get value() {
+        return this._value;
+    }
+    set value(nv) {
+        this._value = nv;
+        this.de('value', {
+            value: nv
+        });
     }
     onPropsChange() {
         const inp = this._input;
@@ -67,4 +77,3 @@ if (!self['RunKit_Script']) {
     };
     document.head.appendChild(scriptTag);
 }
-//# sourceMappingURL=in-the-node.js.map
