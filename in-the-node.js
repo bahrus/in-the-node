@@ -1,6 +1,6 @@
 import { define } from 'trans-render/define.js';
 import { hydrate } from 'trans-render/hydrate.js';
-import { XtallatX } from 'xtal-element/xtal-latx.js';
+import { XtallatX, de } from 'xtal-element/xtal-latx.js';
 /**
  * `in-the-node`
  *  Embed node inside your browser with RunKit.
@@ -25,7 +25,7 @@ export class InTheNode extends XtallatX(hydrate(HTMLElement)) {
         this.onPropsChange();
     }
     connectedCallback() {
-        this.propUp(['input']);
+        this.__propUp(['input']);
         this.getScript();
     }
     get value() {
@@ -33,7 +33,7 @@ export class InTheNode extends XtallatX(hydrate(HTMLElement)) {
     }
     set value(nv) {
         this._value = nv;
-        this.de('value', {
+        this[de]('value', {
             value: nv
         });
     }
